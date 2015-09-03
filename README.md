@@ -6,7 +6,7 @@ An exploration of Processing designed for the web (1.5 Credits).
 
 **Twitter**
 
-Follow creative coders and related organizations: John Maeda, Casey Raes, Daniel Shiffman, ProcessingOrg, bitforms gallery (in NYC), Leaders in Software and Art, codedoodl.es, etc. Anyone whose work you like!
+Follow creative coders and related organizations: John Maeda, Casey Raes, Daniel Shiffman, Golan Levin, ProcessingOrg, bitforms gallery (in NYC), School for Poetic Computation (in NYC), Leaders in Software and Art, codedoodl.es, etc. Anyone whose work you like!
 
 **Books**
 
