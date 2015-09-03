@@ -1,4 +1,4 @@
-# IndependentStudyFA15
+# Independent Study - Fall '15 - Rahlana Smith
 
 An exploration of Processing designed for the web (1.5 Credits).
 
