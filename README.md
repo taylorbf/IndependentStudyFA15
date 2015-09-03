@@ -1,6 +1,6 @@
 # IndependentStudyFA15
 
-An exploration of Processing on the web. *1.5 Credits*
+An exploration of Processing designed for the web (1.5 Credits).
 
 #### Staying in touch with Processing
 
