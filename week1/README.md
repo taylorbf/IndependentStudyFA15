@@ -6,7 +6,7 @@ Ben: Share template, share tutorial on Github Pages.
 
 ## Processing.js Template
 
-In the pjs-template folder, you can find a template for embedding Processing code within a website, using Processing.js.
+In the /pjs-template folder, you can find a template for embedding Processing code within a website, using Processing.js. In the folder, you will find:
 
 #### index.html
 
@@ -64,7 +64,7 @@ When you commit code to the `gh-pages` branch, it will show up at:
 
 So, for example, my Processing JS template will be here:
 
-[taylorbf.github.io/IndependentStudyFA14/week1/pjs-template/](http://taylorbf.github.io/IndependentStudyFA14/week1/pjs-template/)
+[taylorbf.github.io/IndependentStudyFA15/week1/pjs-template/](http://taylorbf.github.io/IndependentStudyFA15/week1/pjs-template/)
 
 This is totally long and verbose. But if you create your own repository for a project, the URL might be something nice and short like:
 
