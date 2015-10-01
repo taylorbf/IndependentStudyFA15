@@ -1,8 +1,20 @@
+<!DOCTYPE html>
+<html>
+<title>Processing Sketch</title>
+<script src="processing.js"></script>
+	<link href="style.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style2.css">
+<body class="news">
+<script type="text/processing" data-processing-target="target">
+
+		//write your processing code in here!
+
 Circle circleShape[] = new Circle[100];
 int shrinkOrGrow = 1;
 int y1 = 0;
 void setup(){
-    size(800,800);
+    size(window.innerWidth, window.innerHeight);
     background(255);
     for (int i=0;i < circleShape.length;i++){
          circleShape[i] = new Circle(200,100,10);
@@ -65,3 +77,27 @@ void circle (int x1, int y1){
   
     } 
 }
+
+	</script>
+<div class="nav">
+
+      <ul>
+        <li class="home"><a class="active" href="index.html"> Home</a></li>
+        
+        <li class="about"> <a  href="about.html">About</a></li>
+        <li class="designs"><a href="designs.html">Designs</a></li>
+        <li class="photography"><a href="photography.html">Photography</a></li>
+        <li class="contact"><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  <div class="absolute">Explore</div>  
+  
+  
+  
+</div>
+
+    <canvas id="target"></canvas> 
+  
+     
+</body>
+</html> 

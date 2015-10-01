@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<title>Processing Sketch</title>
+<script src="processing.js"></script>
+	<link href="style.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style2.css">
+<body class="news">
+<script type="text/processing" data-processing-target="target">
+
+		//write your processing code in here!
+
+Circle circleShape[] = new Circle[100];
+int shrinkOrGrow = 1;
+int y1 = 0;
+void setup(){
+    size(window.innerWidth, window.innerHeight);
+    background(255);
+    for (int i=0;i < circleShape.length;i++){
+         circleShape[i] = new Circle(200,100,10);
+    }
+  }
+
+void draw(){
+    for (int i=0; i< circleShape.length;i++) {
+    for (int j=0; j< 10 ;j++){   
+          circleShape[i].circle(i*80,100*j);
+    
+    }
+  }
+  if (y1 > 1500 ){  
+       shrinkOrGrow = 0;
+     
+     
+    } else if (y1 <= 0) {
+        shrinkOrGrow = 1;
+       
+    }
+     if (shrinkOrGrow == 1) {//grow
+        y1 += 1;
+           
+    } else if (shrinkOrGrow == 0) {
+        y1 -= 4; 
+    
+        
+    }
+    fill(255,255,255, 5);   
+    ellipse(width/2, height/4, y1, y1);
+}
+
+class Circle{
+    int circleX = 0;
+    int circleY = 0;
+    int circleSize = 100;
+    
+    Circle(int r, int g, int b){
+    float crcRed= r;  
+    float crcGreen= g;
+    float crcBlue= b;
+  } 
+  
+
+void circle (int x1, int y1){
+
+   noStroke();
+   pushMatrix();
+    translate(width/2,height/4);
+    rotate(radians(frameCount));
+    ellipseMode(RADIUS); 
+    fill(163, 163, 204, 40);  
+    ellipse(x1+30, y1+40,random(20), random(20));  
+
+    ellipseMode(CENTER);  
+    fill(204, 204, 255, 40);  
+    ellipse(-x1, -y1-40, random(50), random(50));  
+   popMatrix();
+  
+    } 
+}
+
+	</script>
+<div class="nav">
+
+      <ul>
+        <li class="home"><a href="index.html"> Home</a></li>   
+        <li class="about"><a  href="about.html">About</a></li>
+        <li class="designs"><a  href="designs.html">Designs</a></li>
+        <li class="photography"><a  href="photography.html">Photography</a></li>
+        <li class="contact"><a class="active" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  <div class="background">
+  <div class="transbox">
+  
+  
+  <p>
+
+Ex mei nullam urbanitas, facer adipisci an nam. Vix cu euismod forensibus, et graecis disputando vix. An possit delectus delicata est. Eam ad quando suavitate constituam, vel torquatos appellantur ea, tempor iuvaret no vim. Veri tibique pri ex, ne fastidii gloriatur assueverit mea.
+  </p>
+  <p>Quem alii eleifend eos no, eos ocurreret explicari euripidis ad, has quis eros intellegam ea. Ne quis dolorem usu, sit in delenit recusabo argumentum, agam apeirian consetetur sed ea. No mel commune adipisci pertinax. Mea an mucius noster. Id everti minimum omittantur mea, per ex sonet salutandi consectetuer, ad omnis maluisset eos. Quodsi veritus denique ad per, sed deleniti expetenda ullamcorper ne.
+
+Ad cum novum aliquip efficiendi, essent principes rationibus id pri. Ex autem integre adipiscing sit, no pro feugiat molestie. At sumo erroribus molestiae sed, sit adhuc laudem iuvaret eu, case vivendum has in. Ne feugait facilisi deserunt vix. Sea no adhuc eloquentiam.
+
+
+</p>
+  </div>
+  
+  
+  
+</div></div>
+
+    <canvas id="target"></canvas> 
+  
+     
+</body>
+</html> 
