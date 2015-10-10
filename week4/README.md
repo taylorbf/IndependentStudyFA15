@@ -144,6 +144,6 @@ void draw() {
 
 #### Remember...
 
-`sin()` and `cos()` always output numbers between -1 and 1. Those become numbers that you can do whateve you want with!
+`sin()` and `cos()` always output numbers between -1 and 1. Those become numbers that you can do whatever you want with!
 
 
