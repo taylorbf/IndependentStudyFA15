@@ -22,7 +22,7 @@ If you'd like more guided work, another option is breeze through a few chapters 
 
 ## Circular Motion
 
-There are a lot of thorough tutorials covering circular motion, such as Daniel Shiffman's [here](https://www.youtube.com/watch?v=qMq-zd6hguc&list=PLRqwX-V7Uu6bR4BcLjHHTopXItSjRA7yG&index=1) and [here](https://www.youtube.com/watch?v=znOBmOrtz_M&list=PLRqwX-V7Uu6bR4BcLjHHTopXItSjRA7yG&index=2). You are more than welcome to follow along with these, but he covers a lot of math that I believe you don't necessarily need to know to use `sine` and `cos`!
+There are a lot of thorough tutorials covering circular motion, such as Daniel Shiffman's [here](https://www.youtube.com/watch?v=qMq-zd6hguc&list=PLRqwX-V7Uu6bR4BcLjHHTopXItSjRA7yG&index=1) and [here](https://www.youtube.com/watch?v=znOBmOrtz_M&list=PLRqwX-V7Uu6bR4BcLjHHTopXItSjRA7yG&index=2). You are more than welcome to follow along with these, but he covers a lot of math that I believe you don't necessarily need to know to use `sin` and `cos`!
 
 #### A Practical Guide to `sin` and `cos`
 
@@ -55,9 +55,11 @@ Some examples of using `sin`:
 
 `sin( PI * 2 )` equals `0`
 
-What is happening here? The numbers we put into `sin()` -- 0, PI * 0.5, PI * 1, PI * 1.5, etc -- are increasing **linearly**. The output of `sin()` is **not increasing linearly**. It is acting **cyclically**! 
+What is happening here? The numbers we put into `sin()`, which are `0`, `PI * 0.5`, `PI * 1`, `PI * 1.5`, etc, are increasing **linearly**. (Remember, PI is just a number: about 3.14. It is specifically related to the measument of a circle, which is why we are using it here.)
 
-Check out the chart below. From left to right, you see the numbers that you enter into the `sin()` function, and up and down you can see the resulting value, which is **always between 0 and 1**.
+So, the input is increasing linearly. The output of `sin()` is **not increasing linearly**. It is acting **cyclically**! 
+
+Check out the chart below. From left to right, you see the numbers that you enter into the `sin()` function, and up and down you can see the resulting value, which is **always between -1 and 1**.
 
 ![Image](https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Sine_cosine_one_period.svg/2000px-Sine_cosine_one_period.svg.png)
 
