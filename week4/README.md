@@ -140,4 +140,10 @@ void draw() {
 }
 ```
 
+**We have a circular animation!** If you become familiar with how this works, it becomes just as flexible and extraordinary as the rest of Processing. 
+
+#### Remember...
+
+`sin()` and `cos()` always output numbers between -1 and 1. Those become numbers that you can do whateve you want with!
+
 
