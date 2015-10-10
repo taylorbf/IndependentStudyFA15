@@ -41,7 +41,24 @@ What does this do? It creates a variable `counter`, and uses that variable as th
 
 This motion is **linear**. The shape moves with a constant speed, because the counter is increasing by 1 each time.
 
+So, what if you want to create circular motion? It turns out there is a very easy way to convert linear motion to circular motion usine `sin` and `cos`!
 
+Some examples of using `sin`:
 
+`sin( 0 )` equals `0`
+
+`sin( PI * 0.5 )` equals `1`
+
+`sin( PI * 1 )` equals `0`
+
+`sin( PI * 1.5 )` equals `-1`
+
+`sin( PI * 2 )` equals `0`
+
+What is happening here? the numbers we put into the 
+
+Check out the chart here:
 
 ![Image](sinecosine.png)
+
+`sin()` is a function where you can put in a 
