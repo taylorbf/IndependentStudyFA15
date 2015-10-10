@@ -86,7 +86,7 @@ float counter = 0;
 void draw() {
   counter = counter + 1;
   
-  float x = sin(counter)
+  float x = sin(counter);
   ellipse( x, 0, 10, 10 );
 }
 ```
@@ -103,7 +103,7 @@ float counter = 0;
 void draw() {
   counter = counter + 1;
   
-  float x = sin(counter) * 50.
+  float x = sin(counter) * 50;
   ellipse( x, 0, 10, 10 );
 }
 ```
@@ -118,8 +118,8 @@ float counter = 0;
 void draw() {
   counter = counter + 1;
   
-  float x = sin(counter) * 50.
-  float y = cos(counter) * 50.
+  float x = sin(counter) * 50;
+  float y = cos(counter) * 50;
   ellipse( x, y, 10, 10 );
 }
 ```
@@ -136,8 +136,8 @@ float counter = 0;
 void draw() {
   counter = counter + 1;
   
-  float x = sin(counter) * 50 + 50.
-  float y = cos(counter) * 50 + 50.
+  float x = sin(counter) * 50 + 50;
+  float y = cos(counter) * 50 + 50;
   ellipse( x, y, 10, 10 );
 }
 ```
@@ -146,6 +146,6 @@ void draw() {
 
 #### Remember...
 
-`sin()` and `cos()` always output numbers between -1 and 1. Those become numbers that you can do whatever you want with!
+`sin()` and `cos()` always output numbers between -1 and 1. Those become numbers that you can do whatever you want with, just like any other number in Processing!
 
 
