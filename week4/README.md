@@ -55,10 +55,89 @@ Some examples of using `sin`:
 
 `sin( PI * 2 )` equals `0`
 
-What is happening here? the numbers we put into the 
+What is happening here? The numbers we put into `sin()` -- 0, PI * 0.5, PI * 1, PI * 1.5, etc -- are increasing **linearly**. The output of `sin()` is **not increasing linearly**. It is acting **cyclically**! 
 
-Check out the chart here:
+Check out the chart below. From left to right, you see the numbers that you enter into the `sin()` function, and up and down you can see the resulting value, which is **always between 0 and 1**.
 
-![Image](sinecosine.png)
+![Image](https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Sine_cosine_one_period.svg/2000px-Sine_cosine_one_period.svg.png)
 
-`sin()` is a function where you can put in a 
+This chart also shows `cos`, or cosine, which acts the same way but is slightly displaced. 
+
+#### So, to create circular animations...
+
+Revisiting our original example of linear animation:
+
+```
+float counter = 0;
+
+void draw() {
+  counter = counter + 1;
+  ellipse( counter, 0, 10, 10 );
+}
+```
+
+Instead of using counter directly, **we should use counter as input into sin()** which will look like this:
+
+```
+float counter = 0;
+
+void draw() {
+  counter = counter + 1;
+  
+  float x = sin(counter)
+  ellipse( x, 0, 10, 10 );
+}
+```
+
+Cool!!!! We are getting somewhere! Even though you won't see it! : )
+
+What is happening in the above code? Even though **counter** will count upwards linearly forever, `sin(counter)` will move cyclically between -1 and 1, as in the graph above.
+
+Of course, moving between -1 and 1 pixels is not easy to see in Processing. So, let's multiply our circular motion by a little bit.
+
+```
+float counter = 0;
+
+void draw() {
+  counter = counter + 1;
+  
+  float x = sin(counter) * 50.
+  ellipse( x, 0, 10, 10 );
+}
+```
+
+Now you should see the shape moving cyclically left and right.
+
+However, we are only controlling the x-axis of motion so far. To really create circular motion, we need to set the y axis using `cos`.
+
+```
+float counter = 0;
+
+void draw() {
+  counter = counter + 1;
+  
+  float x = sin(counter) * 50.
+  float y = cos(counter) * 50.
+  ellipse( x, y, 10, 10 );
+}
+```
+
+We have motion!! 
+
+Let's keep sprucing up this sketch. Right now you probably only see part of the motion, because the shape should be moving off-screen. Remember, `sin` and `cos` alternate between -1 and 1. We are multiplying the output by 50, so our shape is moving between -50 and 50 on the x axis, and -50 and 50 on the y axis.
+
+Remember, it's all just numbers! If we want to move our whole animation to fit more nicely in our Processing window, maybe we want to **add 50** to each of our coordinates so that the animation happens between **0 and 100** instead of -50 and 50.
+
+```
+float counter = 0;
+
+void draw() {
+  counter = counter + 1;
+  
+  float x = sin(counter) * 50 + 50.
+  float y = cos(counter) * 50 + 50.
+  ellipse( x, y, 10, 10 );
+}
+```
+
+
