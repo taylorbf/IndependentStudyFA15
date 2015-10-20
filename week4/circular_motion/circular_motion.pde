@@ -1,12 +1,9 @@
 float counter = 0;
 
-<<<<<<< HEAD
 void setup() {
   
 }
 
-=======
->>>>>>> origin/master
 void draw() {
   
   background(0);
@@ -18,8 +15,4 @@ void draw() {
   
   ellipse(x,y,20,20);
   
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> origin/master
